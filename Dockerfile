@@ -7,7 +7,8 @@ RUN sh -c 'echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/
   apt-get update && \
   apt-get install -y \
     python-pip \
-    ros-kinetic-desktop-full && \
+    ros-kinetic-desktop-full \
+    ros-kinetic-controller-manager && \
 
 # cleanup
   apt-get clean && \
